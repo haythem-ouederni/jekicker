@@ -34,7 +34,7 @@ These best practices include :
 
 - SEO for search engines and social networks' scrappers
 
-- Use of [Sass]
+- Use of [Sass] and automatic CSS vendor prefixing with [Autoprefixer]
 
 - Use of node modules instead of copying needed librairies' content manually
 
@@ -136,3 +136,4 @@ This project is licensed under the Apache 2.0 License - see the [LICENSE.txt](LI
 [bundler]: http://bundler.io/
 [RubyGems]: https://rubygems.org/
 [Node]: https://nodejs.org/
+[Autoprefixer]: https://github.com/postcss/autoprefixer
