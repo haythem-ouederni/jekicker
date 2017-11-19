@@ -14,7 +14,7 @@ This project is already functional but still under construction and a generator 
 
 - [Included best practices](#best-practices)
 
-- [Github Pages](#github-page)
+- [Github Pages](#github-pages)
 
 - [Prerequisites](#prerequisites)
 
@@ -22,7 +22,7 @@ This project is already functional but still under construction and a generator 
 
 - [Deployment](#deployment)
 
-    - [For Github Pages](#deployment-github-page)
+    - [For Github Pages](#deployment-github-pages)
 
 - [Troubleshooting](#troubleshooting)
 
@@ -50,7 +50,7 @@ These best practices include :
 
 - ...
 
-## <a name=""></a>Github Pages
+## <a name="github-pages"></a>Github Pages
 
 The source code of the website won't be automatically handled by Github Pages. **But no worries !** See the [Deployment](#deployment) section for more information about how to use Github pages for your website.
 
