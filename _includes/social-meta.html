@@ -1,0 +1,39 @@
+<!-- Twitter summary card metadata -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="@{{site.twitter_username}}">
+<meta property="twitter:title" content={{ page.social_title | default : site.title | replace: '"', '' | prepend: '"' | append: '"' }}>
+<meta property="twitter:description" content={{ page.social_description | default : site.description | replace: '"', '' | prepend: '"' | append: '"' }}>
+<meta property="twitter:image" content="{{ page.image_to_share | default : site.image_to_share }}">
+<meta property="twitter:url" content="{{ (site.website + page.page_url) | default : site.website }}">
+
+<!-- Facebook, Pinterest, Google Plus and others make use of open graph metadata -->
+<meta property="og:url" content="{{ (site.website + page.page_url) | default : site.website }}" />
+<meta property="og:site_name" content="TODO Jekicker" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={{ page.social_title | default : site.title | replace: '"', '' | prepend: '"' | append: '"' }} />
+<meta property="og:description" content={{ page.social_description | default : site.description | replace: '"', '' | prepend: '"' | append: '"' }} />
+<meta property="og:image" content="{{ page.image_to_share | default : site.image_to_share }}" />
+<meta property="og:image:url" content="{{ page.image_to_share | default : site.image_to_share }}" />
+<meta property="og:image:secure_url" content="{{ page.image_to_share | default : site.image_to_share }}" />
+<meta property="og:image:type" content="image/png" />
+<meta property="fb:app_id" content="{{ site.facebook_app_id }}" />
+
+
+<!-- Some web site information for crawlers -->
+<!-- specify logo : https://developers.google.com/search/docs/data-types/logo -->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "{{ site.website }}",
+        "logo": "{{ site.image_to_share }}",
+        "name": "{{ site.organization }}",
+        "sameAs": [
+            "{{ site.social_links.facebook }}",
+            "{{ site.social_links.twitter }}",
+            "{{ site.social_links.github }}",
+            "{{ site.social_links.youtube }}",
+            "{{ site.social_links.google_plus }}"
+        ]
+    }
+</script>

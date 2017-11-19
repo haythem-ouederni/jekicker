@@ -1,0 +1,64 @@
+#########################
+## Link to different rules : https://github.com/sasstools/sass-lint/tree/master/docs/rules
+## SCSS to SASS linter converter : http://sasstools.github.io/make-sass-lint-config/
+## SAMPLE CONFIG : https://github.com/sasstools/sass-lint/blob/master/docs/sass-lint.yml
+#########################
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+  # Set the formatter to 'html'
+  formatter: html
+  # Output file instead of logging results
+  output-file: 'linters/sass-lint.html'
+  # Raise an error if more than 50 warnings are generated
+  max-warnings: 50
+# File Options
+files:
+  include: '_assets/stylesheets/**/*.s+(a|c)ss'
+  ignore:
+    - '_assets/node_modules/**/*.s+(a|c)ss'
+# Rule Configuration
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 0
+  no-important: 0
+  indentation:
+    - 2
+    -
+      size: 4
+#  property-sort-order:
+#    - 1
+#    -
+#      order:
+#        - display
+#        - margin
+#      ignore-custom-properties: true
+#  variable-for-property:
+#    - 2
+#    -
+#      properties:
+#        - margin
+#        - content
+  quotes:
+    - 1
+    - 
+      style: 'single'
+  space-before-bang: 1 
+  no-color-hex: 0
+#  no-duplicate-properties: 1
+  no-invalid-hex: 1
+  trailing-semicolon:
+    - 2
+    - include: true

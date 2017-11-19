@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+<meta name="author" content="{{ site.author }}">
+
+<title>{{ page.title | default : site.title }}</title>
+<meta name="description" content={{ page.description | default : site.description | replace: '"', '' | prepend: '"' | append: '"' }}>
+
+<meta name="keywords" lang="fr" content="{{ site.keywords }}">
+
+<!-- Favivons -->
+<link rel="icon" sizes="32x32" href="{% asset_path favicon-32.png %}" type="image/png">
+<link rel="icon" sizes="64x64" href="{% asset_path favicon-64.png %}" type="image/png">
+<link rel="icon" sizes="96x96" href="{% asset_path favicon-96.png %}" type="image/png">
+<link rel="icon" sizes="144x144" href="{% asset_path favicon-144.png %}" type="image/png">
+<link rel="icon" sizes="196x196" href="{% asset_path favicon-196.png %}" type="image/png">
+
+<link rel="apple-touch-icon" sizes="192x192" href="{% asset_path apple-icon.png %}">
+<link rel="apple-touch-icon" sizes="60x60" href="{% asset_path apple-icon-60x60.png %}">
+<link rel="apple-touch-icon" sizes="76x76" href="{% asset_path apple-icon-76x76.png %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% asset_path apple-icon-114x114.png %}">
+<link rel="apple-touch-icon" sizes="120x120" href="{% asset_path apple-icon-120x120.png %}">
+<link rel="apple-touch-icon" sizes="144x144" href="{% asset_path apple-icon-144x144.png %}">
+<meta name="msapplication-TileImage" content="{% asset_path favicon-144.png %}">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+
+<link rel="icon" href="{% asset_path favicon.png %}" type="image/png">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#ef473a">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#ef473a">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#ef473a">

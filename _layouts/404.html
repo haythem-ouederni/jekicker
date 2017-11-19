@@ -1,0 +1,71 @@
+<!doctype html>
+<!DOCTYPE HTML>
+<html 
+    lang="fr"
+    class="no-js"
+	xmlns="http://www.w3.org/1999/xhtml" 
+	prefix="og: http://opengraphprotocol.org/schema/
+			fb: https://www.facebook.com/2008/fbml">
+
+    <head>
+
+        {% include general-meta.html %} 
+
+        {% include social-meta.html %}
+
+        <!-- Google + link TODO -->
+
+        <!-- Google search propriety validation -->
+        <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+        <style>
+            * {
+                line-height: 1.5;
+                margin: 0;
+            }
+
+            html {
+                color: #888181;
+                display: table;
+                font-family: sans-serif;
+                height: 100%;
+                text-align: center;
+                width: 100%;
+            }
+
+            body {
+                display: table-cell;
+                vertical-align: middle;
+                margin: 2em auto;
+            }
+
+            h1 {
+                color: #121111;
+                font-size: 2em;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin: 0 auto;
+                width: 280px;
+            }
+
+            @media only screen and (max-width: 280px) {
+                body,
+                p {
+                    width: 95%;
+                }
+                h1 {
+                    font-size: 1.5em;
+                    margin: 0 0 0.3em;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- The page's content -->
+        {{ content }}
+    </body>
+
+</html>

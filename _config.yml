@@ -1,0 +1,105 @@
+# safe: true
+
+title: Jekicker - Jekyll based advanced boilerplate # TODO
+email: jekicker.contact@gmail.com # TODO
+description: > # this means to ignore newlines
+  "Jekicker is a Jekyll based advanced boilerplace where you find best practices to build a production ready static website.
+  These best practicies include : use of sass, use of node modules instead of copying needed librairies' content manually, minification, uglification,
+  separating application's code from vendor's code, reduing the number of served files, use of gulp tasks,..." # TODO
+image_to_share: TODO # put a link to your image: Not a project's local image link but one existing on the web.
+
+permalink: pretty
+
+name: Jekicker # TODO
+
+author: Jekicker Team # TODO put the author
+
+keywords: > # TODO
+  jekyll, static website, generator, sass, yarn, node modules, gulp tasks, production ready, github, open source, advanced boilerplate, jekicker, jekyll starter kit, blogs, posts, pages
+
+assets:
+  compress:
+      css: true
+      js: true
+  features:
+    automatic_img_size: false
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - node_modules
+    - _assets/favicons
+
+organization : Jekicker
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jekicker.github.io" # todo the base hostname & protocol for your site, e.g. http://example.com
+website: https://jekicker.github.io # TODO
+
+# Jekicker on social medias
+social_links: # TODO
+  facebook: https://www.facebook.com/todo-your-facebook-page/
+  twitter: https://twitter.com/todo-your-twitter-page
+  github: https://github.com/todo-your-github-page
+  googl_plus: https://plus.google.com/todo-your-app-google-plus-page
+  youtube: https://www.youtube.com/todo-your-youtube-channel
+  publisher_google_plus: https://plus.google.com/todo-the-publisher-google-plus-page # the link to the site's publisher google plus profile (different from the app's google plus account)
+
+
+# facebook information
+facebook_app_id: todo-your-facebook-app-id # 19xxxxxxxxxxxxxxxxxxx
+
+# Build settings
+google_analytics_id: todo-your-google-analytics-id # UA-XXXXXXXXX-1
+google_site_verification: todo-your-google-site-verification-code # sIIIxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+timezone: Europe/Paris # todo
+
+markdown: kramdown
+
+highlighter: rouge
+
+plugins:
+  - jekyll-assets
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - README.md
+  - node_modules
+  - project-commands.md
+  - bin/*
+  - package.json
+  - gulp
+  - gulpfile.js
+
+defaults:
+  -
+    scope:
+      path: "" # for the file on the root
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_docs"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: "posts"
+    values:
+      layout: "posts"

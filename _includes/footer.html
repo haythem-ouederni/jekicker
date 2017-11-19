@@ -1,0 +1,65 @@
+<!-- The website's footer -->
+<footer class="todo-jekicker-footer text-center footer">
+
+
+    <!-- Social network -->
+    <div class="social-network">
+
+        <ul class="list-inline">
+
+
+            <!-- Facebook link -->
+            <li>
+                <a href="{{ site.social_links.facebook }}" target="_blank" class="btn-social btn-outline" aria-label="Facebook account" title="Facebook account"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+
+            <!-- Twitter link -->
+            <li>
+                <a href="{{ site.social_links.twitter }}" target="_blank" class="btn-social btn-outline" aria-label="Twitter account" title="Twitter account"><i class="fa fa-fw fa-twitter"></i></a>
+            </li>
+
+            <!-- Youtube link -->
+            <li>
+                <a href="{{ site.social_links.youtube }}" target="_blank" class="btn-social btn-outline" aria-label="Youtube account" title="Youtube account"><i class="fa fa-fw fa-youtube"></i></a>
+            </li>
+
+            <!-- Google plus link -->
+            <li>
+                <a href="{{ site.social_links.googl_plus }}" target="_blank" class="btn-social btn-outline" aria-label="Google + account" title="Google +  account"><i class="fa fa-fw fa-google-plus"></i></a>
+            </li>
+
+            <!-- Github link -->
+            <li>
+                <a href="{{ site.social_links.facebook }}" target="_blank" class="btn-social btn-outline" aria-label="Facebook page" title="Facebook page"><i class="fa fa-fw fa-facebook"></i></a>
+            </li>
+
+            <!-- Email us link -->
+            <li>
+                <a href="mailto:{{ site.email }}" target="_blank" class="btn-social btn-outline" aria-label="Email us" title="Email us"><i class="fa fa-fw fa-envelope"></i></a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="row copyright-container no-gutters">
+
+
+        <div class="col-md-5 push-md-6 email-label">
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+
+        <div class="col-md-2 hidden-sm-down separator-label">
+            |
+        </div>
+
+        <div class="col-md-5 pull-md-6 copyright-label">
+            Copyright &copy; {{ site.name }} {{ site.time | date: '%Y' }}
+        </div>
+
+    </div>
+
+
+
+</footer>
