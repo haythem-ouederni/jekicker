@@ -7,7 +7,7 @@
         "email": "haythem.ouederni@gmail.com",
         "url": "https://haythem-ouederni.github.io/"
     },
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "cacheDirectories": [
         "_assets/node_modules"
     ],
