@@ -17,6 +17,7 @@
         "popper.js": "1.12.9"
     },
     "devDependencies": {
+        "del": "^3.0.0",
         "gulp": "^3.9.1",
         "gulp-eslint": "^4.0.0",
         "gulp-flatten": "^0.3.1",
@@ -30,6 +31,7 @@
         "gulp-uglify": "^3.0.0",
         "gulp-useref": "^3.1.3",
         "lazypipe": "^1.0.1",
+        "run-sequence": "^2.2.0",
         "yargs": "^10.0.3"
     },
     "engines": {
@@ -40,7 +42,7 @@
         "serve": "yarn linting && bundle exec jekyll serve --config _config.yml,_config-dev.yml --livereload",
         "serve:network": "yarn linting && bundle exec jekyll serve --config _config.yml,_config-dev.yml --host=your_local_ip_address --livereload",
         "setup": "bin/setup",
-        "build:prod": "yarn linting && JEKYLL_ENV=production bundle exec jekyll build",
+        "build:prod": "yarn linting && JEKYLL_ENV=production bundle exec jekyll build && gulp build",
         "build:dev": "yarn linting && bundle exec jekyll build --config _config.yml,_config-dev.yml",
         "eslint": "gulp eslint",
         "eslint:fix": "gulp eslint:fix",

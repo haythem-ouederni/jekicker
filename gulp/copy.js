@@ -11,7 +11,8 @@ var handleErrors = require('./handle-errors'),
 
 module.exports = {
     fonts: fonts,
-    common: common
+    common: common,
+    images: images
 };
 
 function fonts() {
@@ -31,7 +32,7 @@ function fonts() {
 function images() {
     return gulp.src(config.build.inputDir + '**/*.{gif,jpg,png}')
         .pipe(plumber({ errorHandler: handleErrors }))
-        .pipe(gulp.dest(config.build.outputDir + 'assets/'));
+        .pipe(gulp.dest(config.build.outputDir));
 }
 
 function common() {
