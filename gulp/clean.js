@@ -1,14 +1,21 @@
-var gulp = require('gulp'),
-    del = require('del'),
-    plumber = require('gulp-plumber');
+var del = require('del');
 
-var handleErrors = require('./handle-errors'),
-    config = require('./config');
+var config = require('./config');
 
 module.exports = {
-    cleanBuildDir: cleanBuildDir
+    cleanOutputDir: cleanOutputDir,
+    cleanInputDir: cleanInputDir
 };
 
-function cleanBuildDir() {
-    return del([config.build.outputDir + '**/*', config.build.outputDir + '!git']);
+function cleanOutputDir() {
+    return del([
+        config.build.outputDir + '**/*',
+        '!' + config.build.outputDir + '.git'
+    ], {force: true});
+}
+
+function cleanInputDir() {
+    return del([
+        config.build.inputDir + '**/*'
+    ], {force: true});
 }

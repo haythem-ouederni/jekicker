@@ -8,7 +8,6 @@ var linting = require('./gulp/linting'),
     copy = require('./gulp/copy'),
     clean = require('./gulp/clean');
 
-
 // copy tasks
 gulp.task('copy:fonts', copy.fonts);
 
@@ -30,14 +29,13 @@ gulp.task('sasslint', linting.sassLint);
 gulp.task('linting', ['eslint', 'sasslint']);
 
 // cleaning tasks
-gulp.task('clean-build-dir', clean.cleanBuildDir);
+gulp.task('clean-output-dir', clean.cleanOutputDir);
 
-// building tasks
+gulp.task('clean-input-dir', clean.cleanInputDir);
 
-// this task if responsible with building the production repo
+// building tasks this task if responsible with building the production repo
 gulp.task('build:prod', build);
 
-// gulp.task('build', ['clean-build-dir'], function (cb) {
-gulp.task('build', function (cb) {
+gulp.task('build', ['clean-output-dir'], function (cb) {
     runSequence('copy', 'build:prod');
 });

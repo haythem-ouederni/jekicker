@@ -2,5 +2,8 @@
 //= require_self
 var to = 'fgre';
 
+/**
+ * Commment for test
+ */
 console.log(to);
 

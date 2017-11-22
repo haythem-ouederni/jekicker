@@ -19,6 +19,7 @@ function fonts() {
     return es.merge(
         gulp.src(config.build.inputDir + '_assets/**/*.{woff,woff2,svg,ttf,eot,otf}')
             .pipe(plumber({ errorHandler: handleErrors }))
+            .pipe(flatten())
             .pipe(rev())
             .pipe(gulp.dest(config.build.outputDir + '_assets'))
             .pipe(rev.manifest(config.build.revManifest, {
