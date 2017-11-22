@@ -80,6 +80,9 @@ exclude:
   - package.json
   - gulp
   - gulpfile.js
+  - yarn.lock
+  - yarn-error.log
+  - LICENSE.txt
 
 defaults:
   -
