@@ -45,6 +45,7 @@
         "serve:network": "yarn linting && JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config-dev.yml --host=your_local_ip_address --livereload",
         "serve:network:windows": "yarn linting && set JEKYLL_ENV=development && bundle exec jekyll serve --config _config.yml,_config-dev.yml --host=your_local_ip_address --livereload",
         "setup": "bin/setup",
+        "setup:windows": "./bin/setup.sh",
         "build:prod": "yarn linting && gulp clean-input-dir && JEKYLL_ENV=production bundle exec jekyll build && gulp build",
         "build:prod:windows": "yarn linting && gulp clean-input-dir && set JEKYLL_ENV=production &&  bundle exec jekyll build && gulp build",
         "build:dev": "yarn linting && gulp clean-input-dir && JEKYLL_ENV=development bundle exec jekyll build --config _config.yml,_config-dev.yml",
